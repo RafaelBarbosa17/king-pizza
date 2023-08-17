@@ -16,6 +16,18 @@ module.exports = {
       lg: '1440px',
       '4k': '2560px'
     },
+    colors: {
+      "redMain": "#BC1616",
+      "black": "#000000",
+      "white": "#FFFFFF",
+      "orange": "#DC8E00",
+      "tealGreen": "#075E54",
+      "lightGreen": "#25D366",
+      "royalBlue": "#405DE6",
+      "purple": "#833AB4",
+      "purpleRed": "#E1306C",
+      "gray": "#131111",
+    },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
@@ -23,8 +35,11 @@ module.exports = {
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
       fontFamily: {
-        allura: ['var(--font-allura)']
-      }
+        courgette: ['var(--font-courgette)'],
+        inter: ['var(--font-inter)'],
+        amiko: ['var(--font-amiko)']
+      },
+      
     },
   },
   plugins: [],

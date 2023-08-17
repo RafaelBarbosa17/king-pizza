@@ -1,14 +1,15 @@
 "use client"
 import Image from "next/image";
-import Theme from "./Theme";
+import Nav from "./Nav";
+import ToggleMenuPizza from "./ToggleMenuPizza";
 import { useTheme } from "@/app/context/ThemeContext";
 
 const Header = () => {
   const { theme } = useTheme();
 
   return (
-    <header className="flex w-screen flex-row justify-between items-center px-4 h-[10vh] border-b-red-700 border-b-4">
-      <div className="w-[125px] h-min">
+    <header className="flex w-full flex-row justify-between items-center px-4 h-[10vh]">
+      <a href="/" className="w-[125px] h-min cursor-pointer">
         {theme === "dark" ? (
           <Image
             src="/logo/logo-red-white.png"
@@ -26,8 +27,9 @@ const Header = () => {
             className="w-full h-full"
           />
         )}
-      </div>
-      <Theme />
+      </a>
+      <Nav />
+      <ToggleMenuPizza />
     </header>
   );
 };

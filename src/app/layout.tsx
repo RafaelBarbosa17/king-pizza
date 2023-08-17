@@ -1,16 +1,21 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter, Courgette } from "next/font/google";
+import { Inter, Courgette, Amiko } from "next/font/google";
 import { ThemeProvider } from "./context/ThemeContext";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: '--font-inter'
 });
-const allura = Courgette({
+const courgette = Courgette({
   subsets: ["latin"],
   weight: '400',
-  variable: '--font-allura'
+  variable: '--font-courgette'
+})
+const amiko = Amiko({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  variable: '--font-amiko'
 })
 
 export const metadata: Metadata = {
@@ -25,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <ThemeProvider>
-      <html lang="pt-br">
+      <html lang="pt-br" className="dark">
         <head>
           <link
             rel="shortcut icon"
@@ -33,7 +38,7 @@ export default function RootLayout({
             type="image/x-icon"
           />
         </head>
-        <body className={`${inter.variable} ${allura.variable} transition-all ease-linear dark:bg-black h-screen`}>{children}</body>
+        <body className={`${inter.variable} ${courgette.variable} ${amiko.variable} transition-all ease-linear dark:bg-black h-screen`}>{children}</body>
       </html>
     </ThemeProvider>
   );
