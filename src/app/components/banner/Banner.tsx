@@ -2,27 +2,24 @@ import Image from "next/image";
 
 const Banner = () => {
   return (
-    <section className="flex flex-row h-[90vh]">
-      {/* elementos de estilisação */}
-      <div>
-        <div className="z-0 absolute right-0 bg-no-repeat md:bg-right bg-center bg-cover dark:bg-black md:w-2/4 w-full h-[90vh] border-y-redMain border-y-2" style={{backgroundImage: "url('/banner-image.png')"}}></div>
-
-        <Image src={'/banner-detail.png'} width={1000} height={1000} alt="vector" className="absolute h-[90vh] top-[10vh] w-[68vw] z-0 hidden md:dark:block" />
-
-        <Image src={'/banner-detail-light.png'} width={1000} height={1000} alt="vector" className="absolute h-[90vh] top-[10vh] w-[68vw] z-0 hidden md:block dark:hidden" />
-
-        <div className="absolute h-[90vh] top-[10vh] w-full z-0 md:hidden block dark:bg-black bg-white dark:opacity-70 opacity-20">
-        </div>
+    <section className="flex flex-row h-[90vh] bg-cover" style={{ backgroundImage: "url('/banner-image.png')" }}>
+      <div className="absolute h-[90vh] top-[10vh] w-full z-0 md:hidden block dark:bg-black bg-white dark:opacity-70 opacity-20">
       </div>
 
-
-      <div className="md:w-2/4 w-full h-full pt-2 flex md:justify-start items-center gap-4 flex-col z-10">
+      <div className="md:w-2/4 w-full h-full pt-2 flex md:justify-start items-center gap-4 flex-col md:bg-[#00000078] md:backdrop-blur-md z-0">
+        <h1 className="text-white text-2xl font-inter font-bold uppercase text-center">
+          Está com fome?
+          <br />
+          <span className="text-orange text-3xl font-inter font-bold uppercase">
+            A gente resolve
+          </span>
+        </h1>
         <Image
           src="/logo-king-pizza.png"
-          width={500}
-          height={500}
+          width={300}
+          height={300}
           alt="favicon"
-          className="block max-w-[300px]"
+          className="block max-w-[250px]"
         />
         <h1 className="dark:text-orange text-4xl text-center text-bold font-courgette rounded p-1">
           Direto do forno <br /> para sua casa!

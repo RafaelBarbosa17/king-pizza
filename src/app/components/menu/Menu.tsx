@@ -4,13 +4,13 @@ const Menu = () => {
   return (
     <section
       id="menu"
-      className="w-full md:min-h-screen h-auto p-4 flex flex-col justify-start items-center border-b-2 border-b-redMain"
+      className="w-full h-auto p-4 flex flex-col justify-start items-center"
     >
       <div className="md:w-3/5 w-full flex flex-col items-center">
         <h1 className="font-amiko font-bold uppercase text-redMain text-4xl text-center">
           Cardápio
         </h1>
-        <p className="text-orange font-bold text-center font-inter my-12">
+        <p className="text-orange font-bold text-center text-xl font-inter my-12">
           O cardápio interativo está em desenvolvimento, para ver o cardápio por
           favor entre em nosso perfil do Whatsapp ou Instagram.
         </p>

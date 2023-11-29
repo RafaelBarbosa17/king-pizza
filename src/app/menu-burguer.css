@@ -1,0 +1,129 @@
+
+#burguer-menu-box-, #burguer-menu-box-active, #burguer-menu-box-desactive {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#bmi-1, #bmi-2, #bmi-3 {
+    width: 30px;
+    height: 3px;
+    border-radius: 10px;
+}
+
+#burguer-menu-box-active #bmi-1 {
+    position: relative;
+    animation: activeButton1 300ms ease-in forwards;
+}
+
+#burguer-menu-box-active #bmi-2 {
+    position: relative;
+    width: 1px;
+    animation: activeButton2 150ms ease-in forwards;
+}
+
+#burguer-menu-box-active #bmi-3 {
+    position: relative;
+    animation: activeButton3 300ms ease-in forwards;
+}
+
+@keyframes activeButton1 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(10px) rotate(45deg);
+    }
+}
+
+@keyframes activeButton2 {
+    0% {
+        width: 30px;
+    }
+    50% {
+        width: 30px;
+    }
+    100% {
+        width: 1px;
+    }
+}
+
+@keyframes activeButton3 {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+}
+
+#burguer-menu-box-desactive #bmi-1 {
+    position: relative;
+    animation: desactiveButton1 300ms ease-in forwards;
+}
+
+#burguer-menu-box-desactive #bmi-2 {
+    position: relative;
+    width: 1px;
+    animation: desactiveButton2 150ms ease-in forwards;
+}
+
+#burguer-menu-box-desactive #bmi-3 {
+    position: relative;
+    animation: desactiveButton3 300ms ease-in forwards;
+}
+
+@keyframes desactiveButton1 {
+    0% {
+        transform: translateY(10px) rotate(45deg);
+    }
+    50% {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes desactiveButton2 {
+    0% {
+        width: 1px;
+    }
+    50% {
+        width: 30px;
+    }
+    100% {
+        width: 30px;
+    }
+}
+
+@keyframes desactiveButton3 {
+    0% {
+        transform: translateY(-10px) rotate(-45deg);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+#card-burguer- {
+    display: none;
+}
+#card-burguer-active {
+    display: block;
+}
+#card-burguer-desactive {
+    display: none;
+}

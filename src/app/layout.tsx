@@ -1,4 +1,5 @@
 import "./globals.css";
+import "./menu-burguer.css";
 import type { Metadata } from "next";
 import { Inter, Courgette, Amiko } from "next/font/google";
 import { ThemeProvider } from "./context/ThemeContext";
@@ -9,7 +10,7 @@ const inter = Inter({
 });
 const courgette = Courgette({
   subsets: ["latin"],
-  weight: '400',
+  weight: ['400'],
   variable: '--font-courgette'
 })
 const amiko = Amiko({
