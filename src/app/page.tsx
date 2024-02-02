@@ -9,6 +9,7 @@ import Footer from "./components/footer/Footer"
 export default function Home() {
   return (
     <div id="App">
+      <div className="bg-orange border-black uppercase text-black font-bold px-4">Site em Desenvolvimento</div>
       <Header />
       <Banner />
       <Local />

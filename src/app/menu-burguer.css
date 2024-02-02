@@ -118,12 +118,31 @@
     }
 }
 
-#card-burguer- {
+#card-nav- {
     display: none;
 }
-#card-burguer-active {
+#card-nav-active {
     display: block;
+    animation: activeCardNav 500ms ease-in-out forwards;
 }
-#card-burguer-desactive {
-    display: none;
+#card-nav-desactive {
+    animation: desactiveCardNav 500ms ease-in-out forwards;
+}
+
+@keyframes activeCardNav {
+    0% {
+        right: -50%
+    }
+    100% {
+        right: 0;
+    }
+}
+@keyframes desactiveCardNav {
+    0% {
+        right: 0;
+    }
+    100% {
+        right: -50%;
+        display: none
+    }
 }

@@ -20,7 +20,7 @@ module.exports = {
       "redMain": "#BC1616",
       "black": "#000000",
       "white": "#FFFFFF",
-      "orange": "#DC8E00",
+      "orange": "#ffa700",
       "tealGreen": "#075E54",
       "lightGreen": "#25D366",
       "royalBlue": "#405DE6",
@@ -39,7 +39,6 @@ module.exports = {
         inter: ['var(--font-inter)'],
         amiko: ['var(--font-amiko)']
       },
-      
     },
   },
   plugins: [],

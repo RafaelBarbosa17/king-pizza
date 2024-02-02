@@ -14,9 +14,9 @@ const CopyToClipBoard: React.FC<{ text: string }> = ({ text }) => {
   };
 
   return (
-    <div className="bg-white rounded-md text-black md:text-left text-center font-inter text-md flex flex-row justify-center items-center w-max">
-      <p className="p-2  border-r-black border-r-[0.5px]">
-        Praça João Pereira, 80B - Centro, <br /> Capela Nova - MG, 36290-000
+    <div className="bg-white rounded-md text-black md:text-left text-center font-inter flex flex-row justify-center items-center w-max">
+      <p className="p-2 break-words w-[340px] border-r-black border-r-[0.5px]">
+        Praça João Pereira, 80B - Centro, Capela Nova - MG, 36290-000
       </p>
       <button
         className="w-auto min-w-[50px] h-full flex flex-col items-center justify-center"

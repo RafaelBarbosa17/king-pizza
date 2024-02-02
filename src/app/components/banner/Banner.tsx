@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="absolute h-[90vh] top-[10vh] w-full z-0 md:hidden block dark:bg-black bg-white dark:opacity-70 opacity-20">
       </div>
 
-      <div className="md:w-2/4 w-full h-full pt-2 flex md:justify-start items-center gap-4 flex-col md:bg-[#00000078] md:backdrop-blur-md z-0">
+      <div className="md:w-2/4 w-full h-full pt-2 flex justify-center items-center gap-4 flex-col md:bg-[#00000078] md:backdrop-blur-md z-0">
         <h1 className="text-white text-2xl font-inter font-bold uppercase text-center">
           Está com fome?
           <br />

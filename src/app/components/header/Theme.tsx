@@ -18,11 +18,10 @@ const ThemeButton = () => {
         onClick={() => {
           changeTheme()
         }}
-        className="w-20 h-10 p-2 rounded-full flex items-center border-orange border-2 dark:bg-black bg-white transition-all"
+        className="w-16 h-8 p-2 px-1 rounded-full flex items-center border-redMain border-2 bg-[#44414cf7] transition-all"
       >
         <div className="dark:translate-x-0 translate-x-full trnasition-all ease-linear duration-100">
-              <HiMoon className='w-8 h-8 fill-orange dark:block hidden' />
-              <HiSun className='w-8 h-8 fill-orange dark:hidden' />
+          <div className='rounded-full text-redMain bg-black w-[24px] h-[24px] text-[8px] flex items-center justify-center'>OFF</div>
         </div>
       </button>
   );

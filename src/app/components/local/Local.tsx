@@ -10,14 +10,14 @@ const Local = () => {
       className="w-full flex"
     >
       <div className="md:w-2/4 w-full h-full md:p-16 p-4 flex flex-col justify-center items-center gap-8">
-        <h2 className="text-redMain text-4xl text-center uppercase font-amiko font-bold">
+        <h1 className="text-redMain text-center uppercase font-amiko font-bold">
           Onde estamos?
-        </h2>
+        </h1>
         <CopyToClipBoard text="Praça João Pereira, 80B - Centro, Capela Nova - MG, 36290-000" />
         <div className="md:hidden block w-full h-[400px]">
           <GoogleMap />
         </div>
-        <p className="dark:text-white text-black text-center font-amiko font-bold text-xl uppercase">
+        <p className="text-center font-amiko font-bold">
           Desfrute da perfeição e dos sabores irresistíveis das nossas pizzas
           artesanais. Venha nos visitar para uma experiência gastronômica única
           ou peça agora e traga a magia da pizzaria direto para o conforto da

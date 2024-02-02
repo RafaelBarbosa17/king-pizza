@@ -37,9 +37,10 @@ export default function RootLayout({
             rel="shortcut icon"
             href="./favicon-dark.png"
             type="image/x-icon"
+            as="image"
           />
         </head>
-        <body className={`${inter.variable} ${courgette.variable} ${amiko.variable} transition-all ease-linear dark:bg-black h-screen`}>{children}</body>
+        <body className={`dark:text-white text-black ${inter.variable} ${courgette.variable} ${amiko.variable} transition-all ease-linear dark:bg-black h-screen overflow-x-hidden`}>{children}</body>
       </html>
     </ThemeProvider>
   );

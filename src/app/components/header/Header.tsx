@@ -1,14 +1,14 @@
 "use client"
 import Image from "next/image";
 import Nav from "./Nav";
-import MenuBurguer from "./MenuBurguer";
+import MenuBurguer from "./MenuNav";
 import { useTheme } from "@/app/context/ThemeContext";
 
 const Header = () => {
   const { theme } = useTheme();
 
   return (
-    <header className="flex w-full flex-row justify-between items-center px-4 h-[10vh] z-100">
+    <header className="flex w-full flex-row justify-between items-center px-8 h-[10vh] z-100">
       <a href="/" className="w-[125px] h-min cursor-pointer">
         {theme === "dark" ? (
           <Image
