@@ -5,13 +5,13 @@ import CopyToClipBoard from './CopyToClipBoard'
 
 const Local = () => {
   return (
-    <section id="local" className="w-full flex">
-      <div className="md:w-2/4 w-full h-full md:p-16 p-4 flex flex-col justify-center items-center gap-8">
-        <h1 className="text-redMain text-center uppercase font-amiko font-bold">
+    <section id="local" className="flex w-full">
+      <div className="flex h-full w-full flex-col items-center justify-center gap-8 p-4 md:w-2/4 md:p-16">
+        <h1 className="text-center font-amiko font-bold uppercase text-redMain">
           Onde estamos?
         </h1>
         <CopyToClipBoard text="Praça João Pereira, 80B - Centro, Capela Nova - MG, 36290-000" />
-        <div className="md:hidden block w-full h-[400px]">
+        <div className="block h-[400px] w-full md:hidden">
           <GoogleMap />
         </div>
         <p className="text-center font-amiko font-bold">
@@ -21,7 +21,7 @@ const Local = () => {
           sua casa. Sua jornada pelo sabor começa aqui.
         </p>
       </div>
-      <div className="md:block hidden w-2/4">
+      <div className="hidden w-2/4 md:block">
         <GoogleMap />
       </div>
     </section>

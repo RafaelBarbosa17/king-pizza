@@ -1,4 +1,4 @@
-import React, { useRef, useState } from 'react'
+import React, { useState } from 'react'
 import { IoCopyOutline } from 'react-icons/io5'
 import { BsCheck2All } from 'react-icons/bs'
 
@@ -15,18 +15,18 @@ const CopyToClipBoard: React.FC<{ text: string }> = ({ text }) => {
   }
 
   return (
-    <div className="bg-white rounded-md text-black md:text-left text-center font-inter flex flex-row justify-center items-center w-max">
-      <p className="p-2 break-words w-[340px] border-r-black border-r-[0.5px]">
+    <div className="flex w-max flex-row items-center justify-center rounded-md bg-white text-center font-inter text-black md:text-left">
+      <p className="w-[340px] break-words border-r-[0.5px] border-r-black p-2">
         Praça João Pereira, 80B - Centro, Capela Nova - MG, 36290-000
       </p>
       <button
-        className="w-auto min-w-[50px] h-full flex flex-col items-center justify-center"
+        className="flex h-full w-auto min-w-[50px] flex-col items-center justify-center"
         onClick={handleCopy}
       >
         {!copied ? (
-          <IoCopyOutline className="w-[30px] h-[30px]" />
+          <IoCopyOutline className="h-[30px] w-[30px]" />
         ) : (
-          <BsCheck2All className="w-[30px] h-[30px] fill-tealGreen" />
+          <BsCheck2All className="h-[30px] w-[30px] fill-tealGreen" />
         )}
         <legend
           className={

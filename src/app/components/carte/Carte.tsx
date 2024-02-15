@@ -4,15 +4,15 @@ const Carte = () => {
   return (
     <section
       id="menu"
-      className="w-full h-auto p-4 flex flex-col justify-start items-center"
+      className="flex h-auto w-full flex-col items-center justify-start p-4"
     >
-      <div className="md:w-3/5 w-full flex flex-col items-center">
-        <h1 className="font-amiko font-bold uppercase text-redMain text-center">
+      <div className="flex w-full flex-col items-center md:w-3/5">
+        <h1 className="text-center font-amiko font-bold uppercase text-redMain">
           Cardápio
         </h1>
         <CarteItems />
       </div>
-      <button className="bg-redMain p-2 rounded mt-4 hover:bg-[#bb2a2a]">
+      <button className="mt-4 rounded bg-redMain p-2 hover:bg-[#bb2a2a]">
         Ver mais...
       </button>
     </section>
