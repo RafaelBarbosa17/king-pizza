@@ -1,14 +1,11 @@
-"use client"
+'use client'
 
-import GoogleMap from "./GoogleMap";
-import CopyToClipBoard from "./CopyToClipBoard";
+import GoogleMap from './GoogleMap'
+import CopyToClipBoard from './CopyToClipBoard'
 
 const Local = () => {
   return (
-    <section
-      id="local"
-      className="w-full flex"
-    >
+    <section id="local" className="w-full flex">
       <div className="md:w-2/4 w-full h-full md:p-16 p-4 flex flex-col justify-center items-center gap-8">
         <h1 className="text-redMain text-center uppercase font-amiko font-bold">
           Onde estamos?
@@ -28,7 +25,7 @@ const Local = () => {
         <GoogleMap />
       </div>
     </section>
-  );
-};
+  )
+}
 
-export default Local;
+export default Local

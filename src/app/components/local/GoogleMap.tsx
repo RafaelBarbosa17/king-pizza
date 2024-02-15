@@ -7,7 +7,7 @@ const GoogleMap = () => {
         loading="lazy"
       ></iframe>
     </div>
-  );
-};
+  )
+}
 
-export default GoogleMap;
+export default GoogleMap

@@ -1,15 +1,15 @@
-import "./globals.css";
-import "./menu-burguer.css";
-import type { Metadata } from "next";
-import { Inter, Courgette, Amiko } from "next/font/google";
-import { ThemeProvider } from "./context/ThemeContext";
+import './globals.css'
+import './menu-burguer.css'
+import type { Metadata } from 'next'
+import { Inter, Courgette, Amiko } from 'next/font/google'
+import { ThemeProvider } from './context/ThemeContext'
 
 const inter = Inter({
-  subsets: ["latin"],
+  subsets: ['latin'],
   variable: '--font-inter'
-});
+})
 const courgette = Courgette({
-  subsets: ["latin"],
+  subsets: ['latin'],
   weight: ['400'],
   variable: '--font-courgette'
 })
@@ -20,14 +20,14 @@ const amiko = Amiko({
 })
 
 export const metadata: Metadata = {
-  title: "King Pizza",
-  description: "A melhor pizza de Capela Nova",
-};
+  title: 'King Pizza',
+  description: 'A melhor pizza de Capela Nova'
+}
 
 export default function RootLayout({
-  children,
+  children
 }: {
-  children: React.ReactNode;
+  children: React.ReactNode
 }) {
   return (
     <ThemeProvider>
@@ -40,8 +40,12 @@ export default function RootLayout({
             as="image"
           />
         </head>
-        <body className={`dark:text-white text-black ${inter.variable} ${courgette.variable} ${amiko.variable} transition-all ease-linear dark:bg-black h-screen overflow-x-hidden`}>{children}</body>
+        <body
+          className={`text-black dark:text-white ${inter.variable} ${courgette.variable} ${amiko.variable} h-screen overflow-x-hidden transition-all ease-linear dark:bg-black`}
+        >
+          {children}
+        </body>
       </html>
     </ThemeProvider>
-  );
+  )
 }

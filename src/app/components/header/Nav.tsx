@@ -1,14 +1,19 @@
-
 const Nav = () => {
-    return (
-        <nav className="w-full p-4 hidden md:flex flex-col-reverse md:flex-row items-center justify-between">
-            <ul className="flex flex-row gap-4">
-                <li className="font-amiko font-bold uppercase cursor-pointer ">Local</li>
-                <li className="font-amiko font-bold uppercase cursor-pointer ">Cardápio</li>
-                <li className="font-amiko font-bold uppercase cursor-pointer ">Sobre Nós</li>
-            </ul>
-        </nav>
-    )
+  return (
+    <nav className="hidden w-full flex-col-reverse items-center justify-between p-4 md:flex md:flex-row">
+      <ul className="flex flex-row gap-4">
+        <li className="cursor-pointer font-amiko font-bold uppercase ">
+          Local
+        </li>
+        <li className="cursor-pointer font-amiko font-bold uppercase ">
+          Cardápio
+        </li>
+        <li className="cursor-pointer font-amiko font-bold uppercase ">
+          Sobre Nós
+        </li>
+      </ul>
+    </nav>
+  )
 }
 
-export default Nav;
+export default Nav

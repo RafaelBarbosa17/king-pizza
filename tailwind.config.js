@@ -4,7 +4,7 @@ module.exports = {
   content: [
     './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
     './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
+    './src/app/**/*.{js,ts,jsx,tsx,mdx}'
   ],
   theme: {
     screens: {
@@ -17,29 +17,38 @@ module.exports = {
       '4k': '2560px'
     },
     colors: {
-      "redMain": "#BC1616",
-      "black": "#000000",
-      "white": "#FFFFFF",
-      "orange": "#ffa700",
-      "tealGreen": "#075E54",
-      "lightGreen": "#25D366",
-      "royalBlue": "#405DE6",
-      "purple": "#833AB4",
-      "purpleRed": "#E1306C",
-      "gray": "#131111",
+      redMain: '#BC1616',
+      black: '#000000',
+      white: '#FFFFFF',
+      orange: '#ffa700',
+      tealGreen: '#075E54',
+      lightGreen: '#25D366',
+      royalBlue: '#405DE6',
+      purple: '#833AB4',
+      purpleRed: '#E1306C',
+      gray: '#131111'
     },
     extend: {
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
+          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))'
       },
       fontFamily: {
         courgette: ['var(--font-courgette)'],
         inter: ['var(--font-inter)'],
         amiko: ['var(--font-amiko)']
       },
-    },
+      fontSize: {
+        sm: '0.8rem',
+        base: '1rem',
+        xl: '1.25rem',
+        '2xl': '1.50rem',
+        '3xl': '1.75rem',
+        '4xl': '2rem',
+        '5xl': '3rem'
+      }
+    }
   },
-  plugins: [],
+  plugins: []
 }

@@ -1,8 +1,6 @@
+import CarteItems from './CarteItems'
 
-import MenuItems from './MenuItems';
-import { BsWhatsapp, BsInstagram } from 'react-icons/bs';
-
-const Menu = () => {
+const Carte = () => {
   return (
     <section
       id="menu"
@@ -12,11 +10,13 @@ const Menu = () => {
         <h1 className="font-amiko font-bold uppercase text-redMain text-center">
           Cardápio
         </h1>
-        <MenuItems />
+        <CarteItems />
       </div>
-      <button className='bg-redMain p-2 rounded mt-4 hover:bg-[#bb2a2a]'>Ver mais...</button>
+      <button className="bg-redMain p-2 rounded mt-4 hover:bg-[#bb2a2a]">
+        Ver mais...
+      </button>
     </section>
-  );
-};
+  )
+}
 
-export default Menu;
+export default Carte
